@@ -5,13 +5,13 @@ body {
   margin:           0px;
 }
 
-header.top {
+header {
   background-color: #675c47;
   margin:           10px 10px 0px 10px;
   height:           108px;
 }
 
-#main {
+section#main, section#blog {
   display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
@@ -68,7 +68,7 @@ div#tableContainer{
 div#tableRow{
   display: table-row;
 }
-#drinks{
+section#drinks{
   display: table-cell;
   background-color: #efe5d0;
   width:20%;
@@ -79,24 +79,20 @@ div#tableRow{
   position:absolute;
   z-index: 2;
   display: inline-block;
-  float: left;
+  /* float: left; */
   background-image: url(images/header.gif);
   width: 400px;
   height:100px;
 }
 .headerImageright{
-  display: inline-block;
+  /* display: inline-block; */
   float:right;
   background-image: url(images/header.gif);
   width: 400px;;
   height:100px;
   background-position: -400px,0px;
 }
-#award{
-  position: absolute;
-  top:30px;
-  left:365px;
-}
+
 #coupon{
   position: fixed;
   top:350px;
@@ -109,12 +105,9 @@ div#tableRow{
 #coupon img{
   border: none;
 }
-nav{
-  background-color: #efe5d0;
-  margin:10px 10px 0px 10px;
-}
 nav ul{
-  margin: 0px ;
+  background-color: #efe5d0;
+  margin:10PX 10PX 0PX 10PX;
   list-style-type: none;
   padding: 5px 0px 5px 0px;
 }
@@ -122,7 +115,7 @@ nav ul li{
   display: inline;
   padding: 5px 10px 5px 10px;
 }
-nav ul li a:link, ul li a:visited{
+nav ul li a:link, nav ul li a:visited{
   color: #954b4b;
   border-bottom: none;
   font-weight: bold;
@@ -130,13 +123,16 @@ nav ul li a:link, ul li a:visited{
 nav ul li.selected{
   background-color: #c8b99c;
 }
-section#main, section#blog{
-  display:table-cell;
-  background:#efe5d0 url(images/background.gif)top left;
-  font-size:105%;
-  padding:15px;
-  vertical-align: top;
+nav{
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+}
+header.top{
+  background-color: #675c47;
+  margin:           10px 10px 0px 10px;
+  height:           108px;
 }
 header.top img#headerSlogan{
-  float:right;
+  float: right;
+
 }
